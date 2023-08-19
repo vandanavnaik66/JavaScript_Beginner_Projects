@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#bulb{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 15px;
+}
+.container h2{
+    margin-bottom: 15px;
+    color: rgb(15, 185, 242);
+    border-bottom: 3px solid rgb(15, 185, 242) ;
+}
+.btn button{
+    padding: 10px 45px;
+    font-size: 20px;
+    font-weight: 600;
+    background: rgb(15, 185, 242);
+    border: none;
+    border-radius: 15px;
+    color: white;
+}
+.btn button:hover{
+    background:rgb(131, 217, 245) ;
+    cursor: pointer;
+}
