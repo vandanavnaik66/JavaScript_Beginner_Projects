@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Project</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <form>
+            <i class="fa-solid fa-paper-plane"></i>
+            <div class="input-type">
+                <label>Full Name</label>
+                <input type="text" id="nameVal" placeholder="Enter your name" onkeyup="nameError()">
+                <span id="name-error"></span>
+            </div>
+            <div class="input-type">
+                <label> Phone No.</label>
+                <input type="number" placeholder="123 456 7890" id="phoneVal" onkeyup="phoneError()">
+                <span id="phone-error"></span>
+            </div>
+            <div class="input-type">
+                <label>Email Id</label>
+                <input type="text" placeholder="Enter Email" id="emailVal" onkeyup="emailError()">
+                <span id="email-error"></span>   
+            </div>
+            <div class="input-type">
+                <label>Your Message</label>
+                <textarea rows="8" placeholder="Enter your message" id="messageVal" onkeyup="messageError()"></textarea>
+                <span id="message-error"></span>   
+            
+            </div>
+            <div class="btn">
+                <button onclick="return validateForm()">Submit</button>
+                <span id="submit-error"></span>   
+                
+            </div>
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>

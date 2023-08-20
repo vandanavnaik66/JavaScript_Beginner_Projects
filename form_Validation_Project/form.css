@@ -1,0 +1,103 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #141a34;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container form{
+    width: 90%;
+    max-width: 450px;
+    padding: 50px 30px 20px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+.fa-paper-plane{
+    position: absolute;
+    left: 50%;
+    top:0;
+    transform: translate(-50%,-50%);
+    background: white;
+    padding: 20px;
+    font-size: 26px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* .container{
+     position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    background: white;
+    width: 450px;
+    padding: 35px;
+    border-radius: 3px;
+} */
+
+.input-type{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+}
+.input-type label{
+width: 30%;
+font-size: 14px;
+}
+.input-type textarea{
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid rgb(185, 184, 184);
+    padding: 5px 0;
+
+}
+.input-type input{
+    width: 70%;
+    border: none;
+    outline: none;
+    padding: 5px 0;
+    border-bottom: 1px solid rgb(185, 184, 184);
+}
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+justify-content: center;
+margin-top: 10px;
+}
+.btn button{
+    padding: 8px 30px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.input-type span{
+    color: red;
+    position: absolute;
+    right: 35px;
+    bottom: 21px;
+    font-size: 13px;
+}
+.btn span{
+    color: red;
+    font-size: 14px;
+margin-top: 5px;
+}
+.input-type span i{
+    color:seagreen;
+}
