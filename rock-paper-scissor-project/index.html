@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock paper scissor game project</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h3>Rock Paper scissor</h3>
+            <div class="btn-container">
+                <button class="btn"><img id="rock" src="images/rock.png"></button>
+                <button class="btn"><img id="paper" src="images/paper.png"></button>
+                <button class="btn"><img id="scissor" src="images/scissors.png"></button>
+            </div>
+
+            <div class="result-container">
+                <div id="instResult">
+                </div>
+                <div id="finalResult">
+                </div>
+                <div class="winCompWin">
+                    <div class="winShow">
+                        <div id="text1">Win :</div>
+                        <div id="win"></div>
+                    </div>
+                    <div class="winShow">
+                        <div id="text2">loss :</div>
+                        <div id="loss"></div>
+                    </div>
+                    <div class="winShow">
+                        <div id="text3">tie :</div>
+                        <div id="tie"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-container">
+           <button style="background: seagreen; color: white; padding: 10px 20px;" onclick="showResult()">Result</button>
+           <button style="background: rgb(41, 101, 203); color: white; padding: 10px 20px;" onclick="Reset()">Reset</button>
+        </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
