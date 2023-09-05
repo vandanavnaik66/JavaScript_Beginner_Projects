@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: aliceblue;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+}
+.container h2{
+    color: rgb(246, 183, 102);
+}
+.accordion-btn{
+    max-width: 450px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.section-btn{
+    padding: 11px;
+    text-align: left;
+    margin-bottom: 12px;
+    box-shadow:2px 2px 10px #cdcdcd ;
+    background: white;
+    font-size: 11px;
+    color: gray;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.active,
+.section-btn:hover{
+    background-color:  rgb(250, 236, 217);
+}
+.section-btn::after{
+content: '\002B';
+color: #C59F61;
+font-weight: bold;
+float: right;
+margin-left: 5px;
+border: 2px solid #C59F61;
+padding: 2px 5px 0 5px;
+border-radius: 3px;
+}
+.active::after{
+    content: '\2212';
+}
+.panel{
+    padding:0 10px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden; 
+     transition: max-height 0.2s ease-out;
+    border-right: 5px;
+}
+.panel p{
+    font-size: 13px;
+    padding: 10px;
+}
