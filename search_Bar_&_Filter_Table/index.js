@@ -2,7 +2,7 @@ const searchFun=()=>{
     let dataTyped=document.getElementById("inputId").value.toUpperCase();
     let myTable=document.getElementById("myTable")
     let tr=myTable.getElementsByTagName("tr")
- for (var i=0; i<tr.length; i++){
+ for (var i=1; i<tr.length; i++){
 
     let td=tr[i].getElementsByTagName('td')[0];
     if(td){
